@@ -7,7 +7,7 @@ import { Item } from "./components/Item";
 export function Adjacent() {
 
   return (
-    <div className="bg-white  mt-32 sm:mx-10 2xl:mx-64 items-center gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center">
+    <div className="bg-white mt-10 md:smt-32 mx-5 sm:mx-10 2xl:mx-64 items-center gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center">
      <Image 
         src='/logo.png'
         width={240}
