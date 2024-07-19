@@ -8,7 +8,7 @@ export function Main() {
 
   return (
     <div className="text-center">
-      <div className="h-80 bp-330px:h-72 tablet:h-80 lg:h-[29rem] 2xl:h-[35rem] relative">
+      <div className="h-80 bp-330px:h-96 lg:h-[29rem] 2xl:h-[35rem] relative">
         <Image 
           src='/main-image.png'
           layout="fill"
