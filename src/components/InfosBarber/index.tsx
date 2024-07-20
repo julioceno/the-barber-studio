@@ -7,7 +7,7 @@ import { Item } from "./components/Item";
 export function InfosBarber() {
 
   return (
-    <section className="bg-white mt-10 md:mt-32 mx-5 sm:mx-10 2xl:mx-36  gap-7 sm:gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center items-center md:items-start lg:items-center">
+    <section className="bg-white mt-10 md:mt-32  mx-5 lg:mx-32 2xl:mx-36 mt-10   gap-7 sm:gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center items-center md:items-start lg:items-center">
      <Image 
         src='/logo.png'
         width={250}
