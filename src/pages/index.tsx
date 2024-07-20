@@ -1,3 +1,4 @@
+import { Address } from "@/components/Address";
 import { Course } from "@/components/Course";
 import { InfosBarber } from "@/components/InfosBarber";
 import { Main } from "@/components/Main";
@@ -10,12 +11,13 @@ const barlow = Barlow({ subsets: ["latin"], weight: ['400', "500", "600", "700",
 // TODO: carregar todas as imagens antes de carregar o site
 export default function Home() {
   return (
-    <div className={`bg-[#F8F5EF] h-full max-w-[2000px] mx-auto ${barlow.className} pb-96`}>
+    <div className={`bg-[#F8F5EF] h-full max-w-[2000px] mx-auto ${barlow.className}`}>
       <Main />
       <InfosBarber />
       <ServiceQuality />
       <OurServices />
       <Course />
+      <Address />
     </div>
   );
 }
