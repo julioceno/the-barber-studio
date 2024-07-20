@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaClock, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { SlMustache } from "react-icons/sl";
-import { Item } from "../Item";
+import { InfoItem } from '../InfoItem';
 import { Button } from "./components/Button";
 
 const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
@@ -46,18 +46,18 @@ export function Address() {
             whileInView={{ opacity: 1, y: 0, x: '-50%'  }}
             transition={{ duration: 0.5 }}
           >
-            <Item
+            <InfoItem
             icon={FaLocationDot}
             title="Endereço"
           >
-            <Item.Description className="w-2/3"><span className="text-sm lg:text-base">Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ</span></Item.Description>
-          </Item>
-            <Item
+            <InfoItem.Description className="w-2/3"><span className="text-sm lg:text-base">Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ</span></InfoItem.Description>
+          </InfoItem>
+            <InfoItem
               icon={FaClock}
               title="Horários"
             >
-              <Item.Description><span className="text-base lg:text-lg">Terça a Sábado 09 às 19h</span></Item.Description>
-            </Item>   
+              <InfoItem.Description><span className="text-base lg:text-lg">Terça a Sábado 09 às 19h</span></InfoItem.Description>
+            </InfoItem>   
           </motion.div>
       </div>
       <iframe 

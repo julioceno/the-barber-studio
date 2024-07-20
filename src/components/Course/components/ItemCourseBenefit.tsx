@@ -9,7 +9,6 @@ interface ItemProps {
 
 const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
 
-// TODO: avaliar a possibilidade desse componente ser o mesmo que foi usado na parte de inofsBarbers
 export function ItemCourseBenefit({ title, imageSrc, description }: ItemProps) {
 
   return (

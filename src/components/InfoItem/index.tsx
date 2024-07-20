@@ -13,7 +13,7 @@ interface DescriptionProps {
   children: ReactNode
 }
 
-function Item({ icon: Icon, title, children, className }: ItemProps) {
+function InfoItem({ icon: Icon, title, children, className }: ItemProps) {
 
   return (
     <div className={`flex flex-col items-center ${className}`}>
@@ -29,7 +29,7 @@ function Description({ children, className }: DescriptionProps) {
   return (<p className={`font-bold text-center text-sm lg:text-base ${className}  `} >{children}</p>)
 }
 
-Item.Description = Description;
+InfoItem.Description = Description;
 
-export { Item }
+export { InfoItem }
 

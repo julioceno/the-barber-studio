@@ -14,9 +14,9 @@ export function Footer() {
   return (
     <footer className="flex flex-col md:flex-row bg-black text-white justify-between  gap-1 px-10 py-2">
         <div className="flex flex-col justify-center items-center">
-            <h3 className="text-2xl md:text-3xl text-white font-extrabold">
+            <h1 className="text-2xl md:text-3xl text-white font-extrabold">
               The Barber <span className="text-"> Studio </span> 
-            </h3>
+            </h1>
             <p className="flex text-xs md:text-sm font-light ">
               &copy; Todos os direitos reservados {year}
             </p>
