@@ -1,9 +1,8 @@
+import { ItemInfo } from "./components/ItemInfo";
 
-// TODO: alterar esse nome
 
-
-// TODO: utilizar o componente Image do nest
-export function Adjacent2() {
+// TODO: utilizar o componente Image do next
+export function ServiceQuality() {
 
   return (
     <section className="flex flex-col gap-8 md:gap-1 md:flex-row-reverse mx-5 sm:mx-10 2xl:mx-36 mt-10 md:mt-32">
@@ -18,36 +17,18 @@ export function Adjacent2() {
           </p>
 
           <div className="flex gap-5 sm:gap-8 md:gap-2 md:mt-5 self-center md:self-start">
-            <Item 
-              value={99}
+            <ItemInfo 
+              value="99"
               complement="%"
               about="SATISFAÇÃO DOS CLIENTES"
             />
-              <Item 
-              value={7}
+            <ItemInfo 
+              value="7"
               complement="+"
               about="ANOS DE EXPERIÊNCIA"
             />
           </div>
         </div>
     </section>
-  )
-}
-
-// TODO: colocar em outro arquivo e melhorar nome
-
-interface Props {
-  value: number
-  about: string;
-  complement: string
-}
-
-function Item({ about, complement, value }: Props) {
-
-  return (
-    <div className="flex flex-col gap-1 md:gap-2">
-      <p className="font-black text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl">{value} <span className="text-almond">{complement}</span> </p>
-      <p className="font-black text-md text-ce lg:w-7/12 ">{about}</p>
-    </div>
   )
 }
