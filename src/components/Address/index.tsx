@@ -1,6 +1,9 @@
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
+import { FaClock, FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { SlMustache } from "react-icons/sl";
+import { Item } from "../Item";
 import { Button } from "./components/Button";
 
 const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
@@ -8,7 +11,7 @@ export function Address() {
 
   return (
     <section className="text-center">
-    <div className="h-[35rem] relative">
+    <div className="h-[55rem] bp-330px:h-[45rem] bp-400px:h-[40rem] relative">
       <Image 
         src='/image.png'
         layout="fill"
@@ -16,23 +19,36 @@ export function Address() {
         alt="Main image"
         objectPosition="top center" 
       />
-        <div className="absolute h-full w-full gap-2 bp-330px:gap-3 text-white flex flex-col justify-center items-center px-3">
-          <h5 className="font-extrabold text-3xl xs:text-4xl md:text-5xl 2xl:text-6xl 2xl:w-6/12 " >VENHA FAZER UMA VISITA</h5>
+        <div className="absolute h-full w-full gap-2 bp-330px:gap-3 lg:gap-6 text-white flex flex-col top-9 lg:top-1/4 items-center px-3 2xl:px-20 lg:items-start">
+          <h5 className="font-extrabold text-3xl xs:text-4xl md:text-5xl 2xl:text-6xl 2xl:w-6/12 lg:text-start" >VENHA FAZER UMA VISITA</h5>
           <p className={`text-sm xs:text-base md:text-xl ${work_Sans.className}`}>A exclusividade que você merece, você encontra só aqui!</p>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 lg:mt-20">
             <Button 
-              icon={faWhatsapp}
+              icon={FaWhatsapp}
               title="CLIQUE AQUI PARA ENVIAR UMA MENSAGEM"
               subject="Nossa equipe vai esta pronta para tirar suas dúvidas"
             />
-            {/** TODO: alterar icon abaixo*/}
             <Button 
-              icon={faWhatsapp} 
+              icon={SlMustache} 
               title="CLIQUE AQUI PARA FAZER UM AGENDAMENTO"
-              subject="Faça o agendamento do conforto de sua casa"
+              subject="Faça um agendamento do conforto de sua casa"
             />
           </div>
+        </div>
+        <div className="grid grid-cols-1 bp-330px:grid-cols-2 bg-white py-12 w-10/12 md:w-8/12 lg:w-6/12 absolute bottom-[-1.5rem] left-1/2 lg:left-3/4 lg:-ml-10 transform -translate-x-1/2 shadow-2xl gap-5 justify-center items-center">
+          <Item
+          icon={FaLocationDot}
+          title="Endereço"
+        >
+          <Item.Description className="w-2/3  text-sm">Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ</Item.Description>
+         </Item>
+          <Item
+            icon={FaClock}
+            title="Horários"
+          >
+            <Item.Description className="">Segunda a sabado 08 às 18h</Item.Description>
+          </Item>   
         </div>
     </div>
     <iframe 

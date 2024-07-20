@@ -1,6 +1,5 @@
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Work_Sans } from "next/font/google";
+import { FaWhatsapp } from "react-icons/fa";
 import { Avaliable } from "./components/Avaliable";
 import { ItemCourseBenefit } from "./components/ItemCourseBenefit";
 import { Stars } from "./components/Stars";
@@ -38,7 +37,7 @@ export function Course() {
           className=" text-center self-center bg-green-500 hover:bg-green-600 duration-300 rounded-md flex justify-center items-center text-white gap-2 px-10 py-2 shadow-green-shadow w-10/12 max-w-72 md:max-w-80 hover:font-bold"
           target="_blank"
         >
-        <FontAwesomeIcon icon={faWhatsapp} className="size-6 md:size-7"/>
+        <FaWhatsapp className="size-6 md:size-7"/>
         <span className="text-sm md:text-base">Escreva uma Mensagem</span>
       </a>
 

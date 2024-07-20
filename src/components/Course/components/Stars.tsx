@@ -1,15 +1,14 @@
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaStar } from "react-icons/fa";
 
 export function Stars() {
 
   return (
-    <div className="flex gap-2 text-yellow-400">
-      <FontAwesomeIcon icon={faStar} />
-      <FontAwesomeIcon icon={faStar} />
-      <FontAwesomeIcon icon={faStar} />
-      <FontAwesomeIcon icon={faStar} />
-      <FontAwesomeIcon icon={faStar} />
+    <div className="flex gap-2 md:text-lg text-yellow-400">
+      <FaStar />
+      <FaStar />
+      <FaStar />
+      <FaStar />
+      <FaStar />
     </div>
   )
 }

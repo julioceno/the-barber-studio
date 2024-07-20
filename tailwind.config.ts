@@ -12,7 +12,9 @@ const config: Config = {
         "almond": "#DEC7A6"
       },
       screens: {
+        "bp-300px": "300px",
         "bp-330px": "330px",
+        "bp-400px": "330px",
 
         'xs': '500px',
         'tablet': '640px',

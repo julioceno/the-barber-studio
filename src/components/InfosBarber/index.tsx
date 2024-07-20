@@ -1,13 +1,13 @@
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faClock, faGraduationCap, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { FaClock, FaGraduationCap, FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import { Item } from "./components/Item";
 
 
 export function InfosBarber() {
 
   return (
-    <section className="bg-white mt-10 md:mt-32  mx-5 lg:mx-32 2xl:mx-36 mt-10   gap-7 sm:gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center items-center md:items-start lg:items-center">
+    <section className="bg-white mt-10 md:mt-32  mx-5 lg:mx-32 2xl:mx-36 gap-7 sm:gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center items-center md:items-start lg:items-center">
      <Image 
         src='/logo.png'
         width={250}
@@ -17,7 +17,7 @@ export function InfosBarber() {
       />
       
       <Item
-        icon={faGraduationCap}
+        icon={FaGraduationCap}
         title="Cursos"
         className="order-2  sm:order-1 md:order-1"
       >
@@ -25,7 +25,7 @@ export function InfosBarber() {
       </Item>
     
       <Item
-        icon={faWhatsapp}
+        icon={FaWhatsapp}
         title="Whatsapp"
         className="order-3  sm:order-2 md:order-2"
       >
@@ -33,14 +33,14 @@ export function InfosBarber() {
       </Item>
     
       <Item
-        icon={faLocationDot}
+        icon={FaLocationDot}
         title="Endereço"
         className="order-4  sm:order-4 md:order-4"
       >
         <Item.Description className="w-2/3 md:w-full text-sm">Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ</Item.Description>
       </Item>
       <Item
-        icon={faClock}
+        icon={FaClock}
         title="Horários"
         className="order-5 sm:order-5 md:order-5"
       >
