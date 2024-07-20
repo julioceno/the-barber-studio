@@ -12,15 +12,15 @@ interface Props {
 export function Avaliable({ imageSrc, title, size, className }: Props) {
 
   return (
-    <div className={`flex flex-col items-center gap-2 md:gap-5 ${className}`}>
+    <div className={`flex flex-col items-center gap-2 ${className}`}>
         <Image
           src={imageSrc}
           height={size.height}
           width={size.width}
           alt={title}
         />
-        <p className="text-xl md:text-2xl lg:text-3xl font-semibold">{title}</p>
-        <p className="text-6xl lg:text-2xl font-bold">5.0</p>
+        <p className="text-xl md:text-2xl lg:text-1xl font-semibold">{title}</p>
+        <p className="text-6xl font-bold">5.0</p>
         <Stars />
     </div>
   )

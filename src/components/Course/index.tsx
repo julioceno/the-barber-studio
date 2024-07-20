@@ -35,7 +35,7 @@ export function Course() {
         Além dos serviços, oferecemos cursos de corte de cabelo, barboterapia e tratamentos de pele. Aprenda com nossos barbeiros experientes e aprimore suas habilidades para se destacar na área. Venha se profissionalizar conosco!</p>
       </div>
       <a
-          className=" text-center self-center bg-green-500 hover:bg-green-600 duration-300 rounded-md flex justify-center items-center text-white gap-2 px-10 py-2 shadow-green-shadow w-10/12 max-w-72 md:max-w-80"
+          className=" text-center self-center bg-green-500 hover:bg-green-600 duration-300 rounded-md flex justify-center items-center text-white gap-2 px-10 py-2 shadow-green-shadow w-10/12 max-w-72 md:max-w-80 hover:font-bold"
           target="_blank"
         >
         <FontAwesomeIcon icon={faWhatsapp} className="size-6 md:size-7"/>
@@ -53,11 +53,11 @@ export function Course() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 bp-330px:grid-cols-2 lg:grid-cols-12 gap-5 place-items-center">
-        <div className="flex flex-col items-center border-almond border-2 text-center gap-3 p-10 bp-300px:w-9/12 md:w-8/12 lg:w-7/12 self-center bp-330px:col-span-2 lg:col-span-10 lg:order-2">
+      <div className="grid grid-cols-1 bp-330px:grid-cols-2 lg:flex gap-5 lg:gap-10 place-items-center lg:justify-center md:mt-20">
+        <div className="flex flex-col items-center border-almond border-2 text-center gap-3 md:gap-5 p-10 bp-300px:w-9/12 md:w-8/12 lg:w-7/12 md:py-24 lg:py-32 self-center bp-330px:col-span-2 lg:order-2">
           <Stars />
           <h6 className="text-lg md:text-xl font-bold">O QUE OS NOSSOS CLIENTES DIZEM</h6>
-          <p className={`${work_Sans.className} text-sm md:text-base`}>“Ótimo serviço e excelente atendimento. Profissionais de altíssimo nível. Galera é gente boa demais.”</p>
+          <p className={`${work_Sans.className} text-sm md:text-base 2xl:mx-10`}>“Ótimo serviço e excelente atendimento. Profissionais de altíssimo nível. Galera é gente boa demais.”</p>
           <span className="text-base md:text-lg font-bold">SAMUEL SALADINO</span>
         </div>
         <Avaliable 
@@ -71,7 +71,7 @@ export function Course() {
         />
         <Avaliable 
           imageSrc="/avaliables/app-barber.png"
-          title="Google"
+          title="App Barber"
           size={{
             height: 70,
             width: 100,
