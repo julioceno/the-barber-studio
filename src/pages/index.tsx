@@ -13,12 +13,16 @@ const barlow = Barlow({ subsets: ["latin"], weight: ['400', "500", "600", "700",
 export default function Home() {
   return (
     <div className={`bg-[#F8F5EF] h-full max-w-[2000px] mx-auto ${barlow.className}`}>
-      <Main />
-      <InfosBarber />
-      <ServiceQuality />
-      <OurServices />
-      <Course />
-      <Address />
+      <header>
+        <Main />
+      </header>
+      <main>
+        <InfosBarber />
+        <ServiceQuality />
+        <OurServices />
+        <Course />
+        <Address />
+      </main>
       <Footer />
     </div>
   );
