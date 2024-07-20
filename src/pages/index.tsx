@@ -1,5 +1,6 @@
 import { InfosBarber } from "@/components/InfosBarber";
 import { Main } from "@/components/Main";
+import { OurServices } from "@/components/OurServices";
 import { ServiceQuality } from "@/components/QualityService";
 import { Barlow } from "next/font/google";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Main />
       <InfosBarber />
       <ServiceQuality />
+      <OurServices />
     </div>
   );
 }
