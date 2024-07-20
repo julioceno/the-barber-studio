@@ -1,3 +1,4 @@
+import { SocialMediaEnum } from "@/utils/contacts";
 import { Work_Sans } from "next/font/google";
 import { FaWhatsapp } from "react-icons/fa";
 import { Avaliable } from "./components/Avaliable";
@@ -34,8 +35,9 @@ export function Course() {
         Além dos serviços, oferecemos cursos de corte de cabelo, barboterapia e tratamentos de pele. Aprenda com nossos barbeiros experientes e aprimore suas habilidades para se destacar na área. Venha se profissionalizar conosco!</p>
       </div>
       <a
-          className=" text-center self-center bg-green-500 hover:bg-green-600 duration-300 rounded-md flex justify-center items-center text-white gap-2 px-10 py-2 shadow-green-shadow w-10/12 max-w-72 md:max-w-80 hover:font-bold"
+          className="text-center self-center bg-green-500 hover:bg-green-600 duration-300 rounded-md flex justify-center items-center text-white gap-2 px-10 py-2 shadow-green-shadow w-10/12 max-w-72 md:max-w-80 hover:font-bold"
           target="_blank"
+          href={SocialMediaEnum.WHATSAPP}
         >
         <FaWhatsapp className="size-6 md:size-7"/>
         <span className="text-sm md:text-base">Escreva uma Mensagem</span>

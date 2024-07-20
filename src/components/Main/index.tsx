@@ -23,16 +23,16 @@ export function Main() {
 
           <div className="flex flex-col bp-330px:flex-row gap-3 bp-330px:gap-5 sm:mt-5 2xl:mt-16">
             <Button 
-              className="font-extrabold text-black bg-almond" 
+              className="font-extrabold text-black bg-almond hover:bg-almond-hover" 
               href={SocialMediaEnum.APPBARBER}
               target="_blank"  
             >
               Faça um agendamento
             </Button>
             <Button 
-              className="font-bold border-2 border-white" 
+              className="font-bold border-2 border-white hover:bg-white group peer" 
               href="#course">
-              conheça nosso curso
+              <span className="group-hover:text-black">Conheça nosso curso</span>
             </Button>
           </div>
         </div>

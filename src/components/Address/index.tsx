@@ -1,3 +1,4 @@
+import { SocialMediaEnum } from '@/utils/contacts';
 import { motion } from 'framer-motion';
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
@@ -29,11 +30,13 @@ export function Address() {
                 icon={FaWhatsapp}
                 title="CLIQUE AQUI PARA ENVIAR UMA MENSAGEM"
                 subject="Nossa equipe vai esta pronta para tirar suas dúvidas"
+                href={SocialMediaEnum.WHATSAPP}
               />
               <Button 
                 icon={SlMustache} 
                 title="CLIQUE AQUI PARA FAZER UM AGENDAMENTO"
                 subject="Faça um agendamento do conforto de sua casa"
+                href={SocialMediaEnum.APPBARBER}
               />
             </div>
           </div>

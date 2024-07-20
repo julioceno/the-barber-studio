@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "almond": "#DEC7A6",
+        "almond-hover": "#EADDCA",
         "black": "#121212"
       },
       screens: {
