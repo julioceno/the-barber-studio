@@ -7,10 +7,10 @@ const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
 export function Main() {
 
   return (
-    <div className="text-center">
+    <section className="text-center">
       <div className="h-80 bp-330px:h-96 lg:h-[29rem] 2xl:h-[35rem] relative">
         <Image 
-          src='/main-image.png'
+          src='/man-cutting-hair-primary.png'
           layout="fill"
           objectFit="cover"
           alt="Main image"
@@ -30,6 +30,6 @@ export function Main() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

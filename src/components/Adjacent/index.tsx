@@ -7,10 +7,10 @@ import { Item } from "./components/Item";
 export function Adjacent() {
 
   return (
-    <div className="bg-white mt-10 md:smt-32 mx-5 sm:mx-10 2xl:mx-64 items-center gap-7 sm:gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center">
+    <section className="bg-white mt-10 md:mt-32 mx-5 sm:mx-10 2xl:mx-36  gap-7 sm:gap-2 py-10 px-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 place-items-center items-center md:items-start lg:items-center">
      <Image 
         src='/logo.png'
-        width={240}
+        width={250}
         height={10}
         alt="Main image"
         className="row-span-2 order-1 sm:order-2 md:order-3"
@@ -42,10 +42,10 @@ export function Adjacent() {
       <Item
         icon={faClock}
         title="Horários"
-        className="order-5  sm:order-5 md:order-5"
+        className="order-5 sm:order-5 md:order-5"
       >
         <Item.Description className="w-2/3">Segunda a sabado 08 às 18h</Item.Description>
       </Item>
-    </div>
+    </section>
   )
 }
