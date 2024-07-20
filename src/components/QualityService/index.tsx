@@ -2,6 +2,7 @@ import { ItemInfo } from "./components/ItemInfo";
 
 
 // TODO: utilizar o componente Image do next
+// TODO: pegar ano de experiencia de forma dinamica
 export function ServiceQuality() {
 
   return (

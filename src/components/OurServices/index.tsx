@@ -30,9 +30,9 @@ export function OurServices() {
 
   return (
     <section className="mt-20 lg:mt-36 flex flex-col mx-5 lg:mx-32 2xl:mx-64 gap-10 md:gap-24">
-      <div className="text-center  md:w-9/12 self-center">
+      <div className="flex flex-col items-center text-center">
         <h5 className="font-black text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl  md:tracking-wide lg:tracking-widest" >CONHEÇA NOSSOS SERVIÇOS</h5>
-        <p className={`leading-6  text-sm md:text-md lg:text-lg lg:mt-5 ${work_Sans.className}`}>
+        <p className={`leading-6  text-sm md:text-md lg:text-lg lg:mt-5 w-10/12 lg:w-9/12 xl:w-7/12  ${work_Sans.className}`}>
         Na nossa barbearia, oferecemos corte de cabelo, barboterapia e tratamento de pele em um ambiente acolhedor. Nossos profissionais são especializados e utilizam produtos de alta qualidade. Venha relaxar e sair renovado!        </p>
       </div>
 

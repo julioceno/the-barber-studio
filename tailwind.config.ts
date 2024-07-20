@@ -16,7 +16,10 @@ const config: Config = {
 
         'xs': '500px',
         'tablet': '640px',
-      }
+      },
+      boxShadow: {
+        "green-shadow": "0px 0px 64px 0px rgba(34, 197, 94, 0.30)",
+      },
     },
   },
   plugins: [],

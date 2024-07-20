@@ -15,8 +15,8 @@ export function ItemService({ title, imageSrc, description }: ItemProps) {
     <div className="flex flex-col items-center text-center md:w-6/12">
          <Image
           src={imageSrc}
-          height={69}
-          width={69}
+          height={70}
+          width={70}
           alt={title}
         />
       <h6 className="font-extrabold text-lg md:text-xl xl:text-2xl" >{title}</h6>
