@@ -29,7 +29,7 @@ export function InfosBarber() {
         title="Whatsapp"
         className="order-3  sm:order-2 md:order-2"
       >
-        <InfoItem.Description className="">+55 21 99217-5804</InfoItem.Description>
+        <InfoItem.Description className="">21 99217-5804</InfoItem.Description>
       </InfoItem>
     
       <InfoItem
