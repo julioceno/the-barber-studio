@@ -56,7 +56,7 @@ export function Address() {
               icon={FaClock}
               title="Horários"
             >
-              <Item.Description><span className="text-base lg:text-lg">Terça a Sabado 09 às 19h</span></Item.Description>
+              <Item.Description><span className="text-base lg:text-lg">Terça a Sábado 09 às 19h</span></Item.Description>
             </Item>   
           </motion.div>
       </div>
