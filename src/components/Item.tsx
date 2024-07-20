@@ -13,8 +13,6 @@ interface DescriptionProps {
   children: ReactNode
 }
 
-
-// TODO: alterar nome do componente
 function Item({ icon: Icon, title, children, className }: ItemProps) {
 
   return (

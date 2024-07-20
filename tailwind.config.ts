@@ -14,7 +14,8 @@ const config: Config = {
       screens: {
         "bp-300px": "300px",
         "bp-330px": "330px",
-        "bp-400px": "330px",
+        "bp-400px": "400px",
+        "bp-480px": "480px",
 
         'xs': '500px',
         'tablet': '640px',
