@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
 import { FaClock, FaWhatsapp } from "react-icons/fa";
@@ -19,7 +20,7 @@ export function Address() {
           alt="Main image"
           objectPosition="top center" 
         />
-          <div className="absolute h-full w-full gap-2 bp-330px:gap-3 lg:gap-6 text-white flex flex-col top-9 lg:top-1/4 items-center px-3 2xl:px-20 lg:items-start">
+          <div className="absolute w-full gap-2 bp-330px:gap-3 lg:gap-6 text-white flex flex-col top-9 lg:top-1/4 items-center px-3 2xl:px-20 lg:items-start">
             <h5 className="font-extrabold text-3xl xs:text-4xl md:text-5xl 2xl:text-6xl 2xl:w-6/12 lg:text-start" >VENHA FAZER UMA VISITA</h5>
             <p className={`text-sm xs:text-base md:text-xl ${work_Sans.className}`}>A exclusividade que você merece, você encontra só aqui!</p>
 
@@ -36,7 +37,12 @@ export function Address() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 bp-480px:grid-cols-2 bg-white py-12 w-10/12 md:w-8/12 lg:w-6/12 absolute bottom-[-1.5rem] left-1/2 lg:left-3/4 lg:-ml-10 transform -translate-x-1/2 shadow-2xl gap-5 justify-center items-center">
+          <motion.div 
+            className="grid grid-cols-1 bp-480px:grid-cols-2 bg-white py-12 w-10/12 md:w-8/12 lg:w-6/12 absolute bottom-[-1.5rem] left-1/2 lg:left-3/4 lg:-ml-10 transform -translate-x-1/2 shadow-2xl gap-5 justify-center items-center"
+            initial={{ opacity: 0, y: 50, x: '-50%'  }}
+            whileInView={{ opacity: 1, y: 0, x: '-50%'  }}
+            transition={{ duration: 0.5 }}
+          >
             <Item
             icon={FaLocationDot}
             title="Endereço"
@@ -49,7 +55,7 @@ export function Address() {
             >
               <Item.Description><span className="text-base lg:text-lg"> Segunda a sabado 08 às 18h</span></Item.Description>
             </Item>   
-          </div>
+          </motion.div>
       </div>
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14705.901907636833!2d-43.7796419!3d-22.8588876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bf98b29a46e75%3A0xdb30a2072d887986!2sThe%20Barber%20Studio!5e0!3m2!1spt-BR!2sbr!4v1721485177247!5m2!1spt-BR!2sbr" 

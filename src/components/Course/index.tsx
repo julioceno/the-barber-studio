@@ -27,7 +27,7 @@ const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
 export function Course() {
 
   return (
-    <section className="mt-20 lg:mt-36 flex flex-col px-5 lg:px-32 2xl:px-64 gap-10 py-10 md:py-20 lg:py-32 bg-white">
+    <section className="mt-20 lg:mt-36 flex flex-col px-5 lg:px-32 2xl:px-64 gap-10 py-10 md:py-20 lg:py-32 bg-white" id="course">
       <div className="flex flex-col items-center text-center">
         <h3 className="font-black text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl  md:tracking-wide lg:tracking-widest" >SE FORME COMO BARBEIRO</h3>
         <p className={`leading-6  text-sm md:text-md lg:text-lg lg:mt-5 w-10/12 lg:w-9/12 xl:w-7/12  ${work_Sans.className}`}>

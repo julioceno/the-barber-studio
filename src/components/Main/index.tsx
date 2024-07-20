@@ -1,3 +1,4 @@
+import { SocialMediaEnum } from "@/utils/contacts";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
 import { Button } from "./Button";
@@ -21,10 +22,16 @@ export function Main() {
           <p className={`text-sm xs:text-base md:text-xl ${work_Sans.className}`}>Aqui é o lugar onde os sonhos da sua imagem se tornam realidade</p>
 
           <div className="flex flex-col bp-330px:flex-row gap-3 bp-330px:gap-5 sm:mt-5 2xl:mt-16">
-            <Button className="font-extrabold text-black bg-almond">
+            <Button 
+              className="font-extrabold text-black bg-almond" 
+              href={SocialMediaEnum.APPBARBER}
+              target="_blank"  
+            >
               Faça um agendamento
             </Button>
-            <Button className="font-bold border-2 border-white">
+            <Button 
+              className="font-bold border-2 border-white" 
+              href="#course">
               conheça nosso curso
             </Button>
           </div>
