@@ -1,9 +1,19 @@
+import { useEffect, useState } from "react";
 import { ItemInfo } from "./components/ItemInfo";
 
 
 // TODO: utilizar o componente Image do next
 // TODO: pegar ano de experiencia de forma dinamica
 export function ServiceQuality() {
+  const [year, setYear] = useState<string>('');
+
+  useEffect(() => {
+    const year2018 =  new Date('1/1/2018').getFullYear();
+    const currentYear = new Date().getFullYear()
+    const value = currentYear - year2018
+
+    setYear(value.toString());
+  }, []);
 
   return (
     <section className="flex flex-col justify-between gap-8 md:gap-1 md:flex-row-reverse mx-5 lg:mx-32 2xl:mx-36 mt-10 md:mt-32">
@@ -24,7 +34,7 @@ export function ServiceQuality() {
               about="SATISFAÇÃO DOS CLIENTES"
             />
             <ItemInfo 
-              value="7"
+              value={year}
               complement="+"
               about="ANOS DE EXPERIÊNCIA"
             />
