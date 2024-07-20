@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "almond": "#DEC7A6"
+        "almond": "#DEC7A6",
+        "black": "#121212"
       },
       screens: {
         "bp-300px": "300px",

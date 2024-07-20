@@ -1,5 +1,6 @@
 import { Address } from "@/components/Address";
 import { Course } from "@/components/Course";
+import { Footer } from "@/components/Footer";
 import { InfosBarber } from "@/components/InfosBarber";
 import { Main } from "@/components/Main";
 import { OurServices } from "@/components/OurServices";
@@ -18,6 +19,7 @@ export default function Home() {
       <OurServices />
       <Course />
       <Address />
+      <Footer />
     </div>
   );
 }
