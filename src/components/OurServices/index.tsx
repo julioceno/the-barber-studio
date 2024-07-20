@@ -5,7 +5,7 @@ const list = [
   {
     imageSrc: "/comb-and-hair-cutting-scissors.png",
     title: "Cortes adultos",
-    description: "Venha ter um corte de cabelo de qualidade, acompanhad  o de uma boa conversa"
+    description: "Venha ter um corte de cabelo de qualidade, acompanhado de uma boa conversa"
   },
   {
     imageSrc: "/hair-brushing-comb.png",
