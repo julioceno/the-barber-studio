@@ -44,7 +44,7 @@ export function InfosBarber() {
         title="Horários"
         className="order-5 sm:order-5 md:order-5"
       >
-        <InfoItem.Description className="w-2/3">Terça a Sexta 09 às 19h e Sábado de 9 à</InfoItem.Description>
+        <InfoItem.Description className="w-2/3">Terça a Sexta 09 às 19h e Sábado de 9 às 17</InfoItem.Description>
       </InfoItem>
     </section>
   )
