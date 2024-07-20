@@ -5,7 +5,7 @@ import { ItemInfo } from "./components/ItemInfo";
 export function ServiceQuality() {
 
   return (
-    <section className="flex flex-col gap-8 md:gap-1 md:flex-row-reverse mx-5 sm:mx-10 2xl:mx-36 mt-10 md:mt-32">
+    <section className="flex flex-col justify-between gap-8 md:gap-1 md:flex-row-reverse mx-5 xsm:mx-10 2xl:mx-36 mt-10 md:mt-32">
         <img 
           src='/man-cutting-hair-secondary.png'
           className="w-full h-36 bp-330px:h-48 md:h-[28rem] md:max-w-[400px] 2xl:h-[35rem] 2xl:max-w-[35rem] object-cover rounded-md md:rounded-none"

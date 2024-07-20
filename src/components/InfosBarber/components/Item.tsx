@@ -27,7 +27,7 @@ function Item({ icon, title, children, className }: ItemProps) {
 }
 
 function Description({ children, className }: DescriptionProps) {
-  return (<p className={`font-bold text-center text-sm md:text-base ${className}  `} >{children}</p>)
+  return (<p className={`font-bold text-center text-sm lg:text-base ${className}  `} >{children}</p>)
 }
 
 Item.Description = Description;
