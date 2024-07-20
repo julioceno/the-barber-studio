@@ -13,7 +13,7 @@ export function ItemService({ title, imageSrc, description }: ItemProps) {
 
   return (
     <div className="flex flex-col items-center text-center md:w-6/12">
-         <Image
+        <Image
           src={imageSrc}
           height={70}
           width={70}
