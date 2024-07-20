@@ -11,7 +11,7 @@ export default function Document() {
           property='og:description'
           content='Barbearia em Itaguaí'
         />
-        <meta property='og:url' content='https://the-barber-studio.vercel.app/' />
+        <meta property='og:url' content='https://www.thebarberstudio.com.br/' />
         <meta property='og:type' content='website' />
       </Head>
       <body>
