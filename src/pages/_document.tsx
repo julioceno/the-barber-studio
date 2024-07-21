@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="pt-br" style={{ scrollBehavior:'smooth' }}>
       <Head>
         <link rel="icon" href="/logo.png" />
-        <meta name='description' content='Barbearia em Itaguaí' />
+        <meta name='description' content='The Barber Studio - Barbearia em Itaguaí' />
         <meta property='og:title' content='The Barber Studio' />
         <meta
           property='og:description'
