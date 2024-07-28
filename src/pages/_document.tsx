@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-br" style={{ scrollBehavior:'smooth' }}>
       <Head>
+        <title>The Barber Studio - Barbearia em Itaguaí</title>
         <link rel="icon" href="/logo.png" />
         <meta name='description' content='The Barber Studio - Barbearia em Itaguaí' />
         <meta property='og:title' content='The Barber Studio' />
