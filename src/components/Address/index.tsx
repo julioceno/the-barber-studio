@@ -7,6 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { SlMustache } from "react-icons/sl";
 import { InfoItem } from '../InfoItem';
 import { Button } from "./components/Button";
+import { modalStore } from '../Modal/store';
 
 const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
 export function Address() {
@@ -36,7 +37,7 @@ export function Address() {
                 icon={SlMustache} 
                 title="CLIQUE AQUI PARA FAZER UM AGENDAMENTO"
                 subject="Faça um agendamento do conforto de sua casa"
-                href={SocialMediaEnum.APPBARBER}
+                onClick={modalStore.handleOpen}
               />
             </div>
           </div>
@@ -48,9 +49,9 @@ export function Address() {
           >
             <InfoItem
             icon={FaLocationDot}
-            title="Endereço"
+            title="Onde Estamos"
           >
-            <InfoItem.Description className="w-2/3"><span className="text-sm lg:text-base">Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ</span></InfoItem.Description>
+            <InfoItem.Description className="w-2/3"><span className="text-sm lg:text-base">A franquia está localizada na Avenida Itaguaí e Estrada do Teixeira</span></InfoItem.Description>
           </InfoItem>
             <InfoItem
               icon={FaClock}

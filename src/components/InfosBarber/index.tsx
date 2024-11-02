@@ -37,7 +37,7 @@ export function InfosBarber() {
         title="Endereço"
         className="order-4  sm:order-4 md:order-4"
       >
-        <InfoItem.Description className="w-2/3 md:w-full text-sm">Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ</InfoItem.Description>
+        <InfoItem.Description className="w-2/3 md:w-full text-sm">A franquia está localizada na Avenida Itaguaí e Estrada do Teixeira</InfoItem.Description>
       </InfoItem>
       <InfoItem
         icon={FaClock}

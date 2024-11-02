@@ -2,9 +2,10 @@ import { SocialMediaEnum } from "@/utils/contacts";
 import { Work_Sans } from "next/font/google";
 import Image from "next/image";
 import { Button } from "./Button";
+import { modalStore } from "../Modal/store";
+
 
 const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
-
 export function Main() {
 
   return (
@@ -24,8 +25,7 @@ export function Main() {
           <div className="flex flex-col bp-330px:flex-row gap-3 bp-330px:gap-5 sm:mt-5 2xl:mt-16">
             <Button 
               className="font-extrabold text-black bg-almond hover:bg-almond-hover" 
-              href={SocialMediaEnum.APPBARBER}
-              target="_blank"  
+              onClick={modalStore.handleOpen}
             >
               Faça um agendamento
             </Button>

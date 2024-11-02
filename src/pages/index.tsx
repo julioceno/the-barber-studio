@@ -3,6 +3,7 @@ import { Course } from "@/components/Course";
 import { Footer } from "@/components/Footer";
 import { InfosBarber } from "@/components/InfosBarber";
 import { Main } from "@/components/Main";
+import { Modal } from "@/components/Modal";
 import { OurServices } from "@/components/OurServices";
 import { ServiceQuality } from "@/components/QualityService";
 import { Barlow } from "next/font/google";
@@ -24,6 +25,7 @@ export default function Home() {
           <Address />
         </main>
         <Footer />
+        <Modal />
       </div>
     </div>
   );
