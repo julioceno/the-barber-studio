@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Unit } from "./components";
 import { useClickOutside } from "@/hooks";
 import { motion } from 'framer-motion';
@@ -15,12 +15,22 @@ export const Modal = observer(() => {
   const popupRef = useRef(null);
   useClickOutside({ ref: popupRef, action: () => modalStore.handleClose() });
 
+  useEffect(() => {
+    if (modalStore.getOpen()) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    return () => document.body.classList.remove('overflow-hidden');
+  }, [modalStore.getOpen()]);
+
   if (!modalStore.getOpen()) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <motion.div 
-        className="bg-white w-11/12 md:w-8/12 lg:w-6/12 xl:w-5/12 text-center shadow-lg rounded-lg"
+        className="bg-white w-11/12 md:w-8/12 lg:w-6/12 xl:w-5/12 text-center shadow-lg rounded-lg overflow-auto "
         ref={popupRef}
         initial="hidden"
         animate="visible"
