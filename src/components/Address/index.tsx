@@ -63,7 +63,7 @@ export function Address() {
       </div>
       <iframe 
         src="https://www.google.com/maps/d/u/1/embed?mid=1SX5yz4CwOt0XYY-saqOh-3nZuH2eY8U&ehbc=2E312F" 
-        className="w-full h-96 mt-[-3.5rem]"
+        className="w-full h-96 mt-[-4.2rem]"
         loading="lazy"
       ></iframe>
   </section>
