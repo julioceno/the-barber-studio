@@ -62,8 +62,8 @@ export function Address() {
           </motion.div>
       </div>
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14705.901907636833!2d-43.7796419!3d-22.8588876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bf98b29a46e75%3A0xdb30a2072d887986!2sThe%20Barber%20Studio!5e0!3m2!1spt-BR!2sbr!4v1721485177247!5m2!1spt-BR!2sbr" 
-        className="w-full h-96"
+        src="https://www.google.com/maps/d/u/1/embed?mid=1SX5yz4CwOt0XYY-saqOh-3nZuH2eY8U&ehbc=2E312F" 
+        className="w-full h-96 mt-[-3.5rem]"
         loading="lazy"
       ></iframe>
   </section>
