@@ -7,7 +7,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { SlMustache } from "react-icons/sl";
 import { InfoItem } from '../InfoItem';
 import { Button } from "./components/Button";
-import { modalStore } from '../Modal/store';
 
 const work_Sans = Work_Sans({ subsets: ["latin"], weight: ['400'] });
 export function Address() {
@@ -37,7 +36,7 @@ export function Address() {
                 icon={SlMustache} 
                 title="CLIQUE AQUI PARA FAZER UM AGENDAMENTO"
                 subject="Faça um agendamento do conforto de sua casa"
-                onClick={modalStore.handleOpen}
+                href={SocialMediaEnum.APPBARBER_UNIT_1}
               />
             </div>
           </div>
@@ -62,10 +61,10 @@ export function Address() {
           </motion.div>
       </div>
       <iframe 
-        src="https://www.google.com/maps/d/u/1/embed?mid=1SX5yz4CwOt0XYY-saqOh-3nZuH2eY8U&ehbc=2E312F" 
-        className="w-full h-96 mt-[-4.2rem]"
+        src={SocialMediaEnum.MAP}
+        className="w-full h-96"
         loading="lazy"
       ></iframe>
-  </section>
+    </section>
   )
 }

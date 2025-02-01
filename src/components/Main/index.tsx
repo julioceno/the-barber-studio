@@ -25,7 +25,8 @@ export function Main() {
           <div className="flex flex-col bp-330px:flex-row gap-3 bp-330px:gap-5 sm:mt-5 2xl:mt-16">
             <Button 
               className="font-extrabold text-black bg-almond hover:bg-almond-hover" 
-              onClick={modalStore.handleOpen}
+              href={SocialMediaEnum.APPBARBER_UNIT_1}
+              target="_blank"
             >
               Faça um agendamento
             </Button>
