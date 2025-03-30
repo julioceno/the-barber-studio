@@ -36,7 +36,7 @@ export function Address() {
                 icon={SlMustache} 
                 title="CLIQUE AQUI PARA FAZER UM AGENDAMENTO"
                 subject="Faça um agendamento do conforto de sua casa"
-                href={SocialMediaEnum.APPBARBER_UNIT_1}
+                href={SocialMediaEnum.SCHEDULING_SYSTEM_UNIT_1}
               />
             </div>
           </div>

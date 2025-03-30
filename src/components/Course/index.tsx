@@ -71,8 +71,8 @@ export function Course() {
           className="lg:order-1"
         />
         <Avaliable 
-          imageSrc="/avaliables/app-barber.png"
-          title="App Barber"
+          imageSrc="/avaliables/cash-barber.png"
+          title="Cash Barber"
           size={{
             height: 70,
             width: 100,

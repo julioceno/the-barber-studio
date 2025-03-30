@@ -45,12 +45,12 @@ export const Modal = observer(() => {
             <Unit 
               title="Unidade I"
               address="Estrada Teixeiras , 338 - Rua do Febre Amarela - 23820275 Vista Alegre - Itaguaí/RJ"
-              link={SocialMediaEnum.APPBARBER_UNIT_1}
+              link={SocialMediaEnum.SCHEDULING_SYSTEM_UNIT_1}
             />
             <Unit 
               title="Unidade II"
               address="Avenida Itaguaí , 24 - 23820-306 Engenho - Itaguaí/RJ"
-              link={SocialMediaEnum.APPBARBER_UNIT_2}
+              link={SocialMediaEnum.SCHEDULING_SYSTEM_UNIT_2}
             />
           </div>
         </div>
